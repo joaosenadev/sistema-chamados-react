@@ -1,0 +1,41 @@
+.login-container, 
+.register-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #14131a;
+}
+.login, 
+.register{
+    display: flex;
+    width: 90%;
+    max-width: 500px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.login h1,
+.register h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.login a,
+.register a{
+    margin-top: 8px;
+    cursor: pointer;
+    color: #0091ff;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 25px;
+}

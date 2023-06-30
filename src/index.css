@@ -1,13 +1,91 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+/* Container */
+.container {
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+/* Content */
+.content {
+  margin-left: 240px;
+  padding: 1px 16px;
+}
+
+
+/* Label Avatar */
+.label-avatar {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.label-avatar input {
+  display: none;
+}
+
+.label-avatar span {
+  position: absolute;
+  display: flex;
+  z-index: 99;
+  transition: .3s;
+  padding: 50px;
+  border-radius: 100%;
+  background-color: #00000070;
+}
+
+
+/* Form Profile */
+.form-profile {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+}
+
+.form-profile img {
+  margin-bottom: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.form-profile label {
+  margin: .4em 0;
+  font-size: 1.4rem;
+}
+
+.form-profile input:disabled {
+  cursor: not-allowed;
+}
+.form-profile-input {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+  flex-direction: column;
 }
